@@ -1,0 +1,16 @@
+syntax = "proto3";
+//import "google/protobuf/empty.proto";
+package Event;
+
+service EventService {
+  rpc GetAllRecords (query) returns (Record) {}
+}
+
+message Record {
+  string result=1;
+
+}
+message query{
+  string query=1;
+
+}
